@@ -7,7 +7,7 @@ import myimage from '../../assets/Ellipse 1.jpg'
 function Topnav({classname}) {
 
   return (
-    <div className={`${classname} h-20 overflow-hidden flex justify-end bg-white`}>
+    <div className={`${classname} h-20 overflow-hidden flex justify-end bg-white `}>
       <div className="flex flex-col">
         <div className="flex relative right-6 top-4">
           <h3 className=" text-3xl">Free trial | </h3>
