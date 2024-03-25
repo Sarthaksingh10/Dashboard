@@ -5,14 +5,24 @@ import { faArrowLeft, faCircleQuestion, faDatabase } from "@fortawesome/free-sol
 import { faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons";
 import { faTableCellsLarge } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import '../../App.css'
+
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 function Sidenav({ classname }) {
 
-   const collapse=()=>{}
+    const reference= useRef(null)
+
+   const collapse=()=>{
+    
+    if (reference.hasAttribute==='className') {
+      reference.setAttribute('className', 'hidden')
+    }
+   }
 
   return (
-    <div className={` ${classname} overflow-hidden `}>
-      <div className="flex flex-col justify-between ">
+    <div className={` ${classname} overflow-hidden `} >
+      <div className="flex flex-col justify-between " ref={reference}>
         <div className="flex justify-center h-20 text-2xl items-center">
           <h1 className=" font-bold">Necleo</h1>
         </div>
